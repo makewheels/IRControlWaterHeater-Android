@@ -2,6 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.androiddeveloper.ircontrolwaterheater">
 
+    <uses-permission android:name="android.permission.TRANSMIT_IR" />
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
