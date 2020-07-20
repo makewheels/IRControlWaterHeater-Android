@@ -18,6 +18,7 @@ public class MainActivity extends AppCompatActivity {
         boolean hasIrEmitter = IRUtil.init(this);
         if (!hasIrEmitter) {
             startActivity(new Intent(this, NoIrActivity.class));
+            finish();
         }
         initViews();
         setClickListener();
