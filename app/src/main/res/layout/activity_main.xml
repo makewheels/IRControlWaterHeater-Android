@@ -3,13 +3,40 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tv_state"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:text="@string/state"
+        android:textSize="36dp" />
 
     <Button
         android:id="@+id/btn_open"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Button"
+        android:text="@string/open"
+        android:textSize="28dp"
         tools:layout_editor_absoluteX="65dp"
         tools:layout_editor_absoluteY="38dp" />
+
+    <Button
+        android:id="@+id/btn_close"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/close"
+        android:textSize="28dp" />
+
+    <Button
+        android:id="@+id/btn_heat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/heat"
+        android:textSize="28dp" />
+
 </LinearLayout>

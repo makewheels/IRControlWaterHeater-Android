@@ -1,4 +1,4 @@
-package com.androiddeveloper.ircontrolwaterheater;
+package com.androiddeveloper.ircontrolwaterheater.ir;
 
 import java.util.ArrayList;
 import java.util.List;

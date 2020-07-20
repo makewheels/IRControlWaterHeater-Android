@@ -1,4 +1,4 @@
-package com.androiddeveloper.ircontrolwaterheater;
+package com.androiddeveloper.ircontrolwaterheater.ir;
 
 import android.content.Context;
 import android.hardware.ConsumerIrManager;

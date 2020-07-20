@@ -2,4 +2,10 @@
 <resources>
     <string name="app_name">IRControlWaterHeater</string>
     <string name="your_device_not_support_ir">设备不支持红外</string>
+    <string name="open">打开</string>
+    <string name="close">关闭</string>
+    <string name="heat">加热</string>
+    <string name="state">状态</string>
+    <string name="heating">加热中</string>
+    <string name="off">断开</string>
 </resources>

@@ -1,4 +1,10 @@
 <resources>
     <string name="app_name">IRControlWaterHeater</string>
-    <string name="your_device_not_support_ir">Your device does\'t support_ IR</string>
+    <string name="your_device_not_support_ir">Your device does\'t support IR</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <string name="heat">Heat</string>
+    <string name="state">State</string>
+    <string name="heating">Heating</string>
+    <string name="off">OFF</string>
 </resources>
