@@ -17,25 +17,31 @@
         android:textSize="36dp" />
 
     <Button
-        android:id="@+id/btn_open"
+        android:id="@+id/btn_on"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/open"
+        android:paddingTop="@dimen/button_padding"
+        android:paddingBottom="@dimen/button_padding"
+        android:text="@string/on"
         android:textSize="28dp"
         tools:layout_editor_absoluteX="65dp"
         tools:layout_editor_absoluteY="38dp" />
 
     <Button
-        android:id="@+id/btn_close"
+        android:id="@+id/btn_off"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/close"
+        android:paddingTop="@dimen/button_padding"
+        android:paddingBottom="@dimen/button_padding"
+        android:text="@string/off"
         android:textSize="28dp" />
 
     <Button
         android:id="@+id/btn_heat"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:paddingTop="@dimen/button_padding"
+        android:paddingBottom="@dimen/button_padding"
         android:text="@string/heat"
         android:textSize="28dp" />
 

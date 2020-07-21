@@ -1,8 +1,55 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".ChooseHeatTimeActivity">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingTop="10dp"
+        android:paddingBottom="5dp"
+        android:text="@string/please_choose_time"
+        android:textSize="30dp" />
+
+    <Button
+        android:id="@+id/btn_heat_10min"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="10 min" />
+
+    <Button
+        android:id="@+id/btn_heat_20min"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="20 min" />
+
+    <Button
+        android:id="@+id/btn_heat_30min"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="30 min" />
+
+    <Button
+        android:id="@+id/btn_heat_40min"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="40 min" />
+
+    <Button
+        android:id="@+id/btn_heat_50min"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="50 min" />
+
+    <Button
+        android:id="@+id/btn_heat_60min"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="60 min" />
+
+</LinearLayout>

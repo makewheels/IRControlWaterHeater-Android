@@ -10,33 +10,52 @@ public class IRUtil {
     private static int userCodeHigh = 42;
     private static int userCodeLow = 78;
 
+    //1088254603
     private static int[] OPEN = NecPattern.buildPattern(userCodeHigh, userCodeLow, 0);
+    //3030512581
     private static int[] CLOSE = NecPattern.buildPattern(userCodeHigh, userCodeLow, 1);
-    private static int[] HEAT_10_MIN = NecPattern.buildPattern(userCodeHigh, userCodeLow, 10);
-    private static int[] HEAT_20_MIN = NecPattern.buildPattern(userCodeHigh, userCodeLow, 20);
-    private static int[] HEAT_30_MIN = NecPattern.buildPattern(userCodeHigh, userCodeLow, 30);
-    private static int[] HEAT_40_MIN = NecPattern.buildPattern(userCodeHigh, userCodeLow, 40);
-    private static int[] HEAT_50_MIN = NecPattern.buildPattern(userCodeHigh, userCodeLow, 50);
-    private static int[] HEAT_60_MIN = NecPattern.buildPattern(userCodeHigh, userCodeLow, 60);
-    private static int[] HEAT_70_MIN = NecPattern.buildPattern(userCodeHigh, userCodeLow, 70);
-    private static int[] HEAT_80_MIN = NecPattern.buildPattern(userCodeHigh, userCodeLow, 80);
-    private static int[] HEAT_90_MIN = NecPattern.buildPattern(userCodeHigh, userCodeLow, 90);
+    private static int[] HEAT_10_MIN = NecPattern.buildPattern(userCodeHigh, userCodeLow, 11);
+    private static int[] HEAT_20_MIN = NecPattern.buildPattern(userCodeHigh, userCodeLow, 12);
+    private static int[] HEAT_30_MIN = NecPattern.buildPattern(userCodeHigh, userCodeLow, 13);
+    private static int[] HEAT_40_MIN = NecPattern.buildPattern(userCodeHigh, userCodeLow, 14);
+    private static int[] HEAT_50_MIN = NecPattern.buildPattern(userCodeHigh, userCodeLow, 15);
+    private static int[] HEAT_60_MIN = NecPattern.buildPattern(userCodeHigh, userCodeLow, 16);
 
     public static boolean init(Context context) {
         consumerIrManager = (ConsumerIrManager) context.getSystemService(Context.CONSUMER_IR_SERVICE);
         return consumerIrManager.hasIrEmitter();
     }
 
-    public static void sendOPEN() {
+    public static void sendON() {
         consumerIrManager.transmit(carrierFrequency, OPEN);
     }
 
-    public static void sendCLOSE() {
+    public static void sendOFF() {
         consumerIrManager.transmit(carrierFrequency, CLOSE);
     }
 
     public static void sendHEAT_10_MIN() {
         consumerIrManager.transmit(carrierFrequency, HEAT_10_MIN);
+    }
+
+    public static void sendHEAT_20_MIN() {
+        consumerIrManager.transmit(carrierFrequency, HEAT_20_MIN);
+    }
+
+    public static void sendHEAT_30_MIN() {
+        consumerIrManager.transmit(carrierFrequency, HEAT_30_MIN);
+    }
+
+    public static void sendHEAT_40_MIN() {
+        consumerIrManager.transmit(carrierFrequency, HEAT_40_MIN);
+    }
+
+    public static void sendHEAT_50_MIN() {
+        consumerIrManager.transmit(carrierFrequency, HEAT_50_MIN);
+    }
+
+    public static void sendHEAT_60_MIN() {
+        consumerIrManager.transmit(carrierFrequency, HEAT_60_MIN);
     }
 
 }
