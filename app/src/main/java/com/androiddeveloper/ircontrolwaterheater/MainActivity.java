@@ -2,7 +2,6 @@ package com.androiddeveloper.ircontrolwaterheater;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
@@ -50,13 +49,13 @@ public class MainActivity extends AppCompatActivity {
         btn_on.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                IRUtil.sendON();
+                IRUtil.send_ON();
             }
         });
         btn_off.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                IRUtil.sendOFF();
+                IRUtil.send_OFF();
             }
         });
         btn_heat.setOnClickListener(new View.OnClickListener() {
@@ -76,19 +75,18 @@ public class MainActivity extends AppCompatActivity {
             if (data != null) {
                 heatTime = data.getIntExtra("heatTime", 0);
             }
-            Log.e("heatTime", heatTime + " min");
             if (heatTime == 10) {
-                IRUtil.sendHEAT_10_MIN();
+                IRUtil.send_HEAT_10_MIN();
             } else if (heatTime == 20) {
-                IRUtil.sendHEAT_20_MIN();
+                IRUtil.send_HEAT_20_MIN();
             } else if (heatTime == 30) {
-                IRUtil.sendHEAT_30_MIN();
+                IRUtil.send_HEAT_30_MIN();
             } else if (heatTime == 40) {
-                IRUtil.sendHEAT_40_MIN();
+                IRUtil.send_HEAT_40_MIN();
             } else if (heatTime == 50) {
-                IRUtil.sendHEAT_50_MIN();
+                IRUtil.send_HEAT_50_MIN();
             } else if (heatTime == 60) {
-                IRUtil.sendHEAT_60_MIN();
+                IRUtil.send_HEAT_60_MIN();
             }
         }
     }
