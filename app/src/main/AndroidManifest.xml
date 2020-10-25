@@ -10,7 +10,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ChooseHeatTimeActivity"></activity>
+        <activity android:name=".ChooseHeatTimeActivity" />
         <activity android:name=".NoIrActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
