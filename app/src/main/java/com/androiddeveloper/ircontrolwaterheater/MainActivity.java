@@ -17,7 +17,7 @@ public class MainActivity extends AppCompatActivity {
     private Button btn_off;
     private Button btn_heat;
 
-    private int REQUEST_CODE_HEAT_TIME = 0;
+    private final int REQUEST_CODE_HEAT_TIME = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
